@@ -1,7 +1,7 @@
 package com.alexbor.shoplist.domain
 
-class EditShopItemUseCase {
+class EditShopItemUseCase (private val shopListRepository: ShopListRepository){
     fun editShopList(shopItem: ShopItem){
-
+        shopListRepository.editShopList(shopItem)
     }
 }
